@@ -1,5 +1,5 @@
 <p align="center">
-<img src="/src/frontend/static/icons/Hipster_HeroLogoMaroon.svg" width="300" alt="Happy Shoppy" />
+<img src="/src/frontend/static/icons/LogoImage.png" width="300" alt="Happy Shoppy" />
 </p>
 
 ![Continuous Integration](https://github.com/GoogleCloudPlatform/microservices-demo/workflows/Continuous%20Integration%20-%20Main/Release/badge.svg)
