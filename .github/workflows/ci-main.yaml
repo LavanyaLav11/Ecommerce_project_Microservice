@@ -82,8 +82,8 @@ jobs:
         skaffold run --default-repo=gcr.io/$PROJECT_ID/$GITHUB_REF --tag=$GITHUB_SHA --namespace=$NAMESPACE -p network-policies
       env:
         ACTIONS_ALLOW_UNSECURE_COMMANDS: true
-        PROJECT_ID: "online-boutique-ci"
-        PR_CLUSTER: "online-boutique-prs"
+        PROJECT_ID: "shoppy-happy-ci"
+        PR_CLUSTER: "shoppy-happy-prs"
         ZONE: "us-central1-c"
     - name: Wait For Pods
       timeout-minutes: 20

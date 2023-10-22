@@ -130,7 +130,7 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 DIR="terraform"
 gcloud services enable cloudresourcemanager.googleapis.com --project=$PROJECT
 REGION="us-central1"
-NAME="online-boutique"
+NAME="shoppy-happy"
 NAMESPACE="default"
 FILEPATH_MANIFEST="../kustomize/"
 MEMORYSTORE="false"
@@ -147,7 +147,7 @@ terraform -chdir="$DIR" apply -auto-approve \
     -var memorystore="${MEMORYSTORE}"
 
 section_open "Testing Google Kubernetes Engine cluster exists"
-    evalTest 'gcloud container clusters describe online-boutique --format="value(name)" --region $REGION' "online-boutique"
+    evalTest 'gcloud container clusters describe shoppy-happy --format="value(name)" --region $REGION' "shoppy-happy"
 section_close
 
 section_open "Testing Happy Shoppy's services are running"
@@ -181,7 +181,7 @@ terraform -chdir="$DIR" destroy -auto-approve \
     -var memorystore="${MEMORYSTORE}"
 
 section_open "Testing Google Kubernetes Engine cluster does NOT exist"
-    evalTest 'gcloud container clusters describe online-boutique --format="value(name)" --region $REGION' "EXPECTERROR"
+    evalTest 'gcloud container clusters describe shoppy-happy --format="value(name)" --region $REGION' "EXPECTERROR"
 section_close
 
 # This is only needed if you tests fail alot because of overlaping runs of the

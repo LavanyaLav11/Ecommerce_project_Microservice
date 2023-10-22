@@ -3,7 +3,7 @@ kind: FrontendConfig
 metadata:
   name: frontend-frontend-config
 spec:
-  sslPolicy: online-boutique-ssl-policy
+  sslPolicy: shoppy-happy-ssl-policy
   redirectToHttps:
     enabled: true
     responseCodeName: MOVED_PERMANENTLY_DEFAULT

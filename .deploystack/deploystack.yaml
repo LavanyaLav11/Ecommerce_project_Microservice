@@ -10,6 +10,6 @@ region_default: us-central1
 hard_settings:
   filepath_manifest: ../kustomize/
   memorystore: "false"
-  name: online-boutique
+  name: shoppy-happy
   namespace: default
 documentation_link: https://cloud.google.com/shell/docs/cloud-shell-tutorials/deploystack/microservices-demo

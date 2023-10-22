@@ -2,13 +2,13 @@
 
 This directory contains extra deploy manifests for configuring Happy Shoppy solution on GKE for onlineboutique.dev.
 
-_Note: before moving forward, the Happy Shoppy apps should already be deployed [on the online-boutique-release GKE cluster](/docs/releasing#10-deploy-releasekubernetes-manifestsyaml-to-our-online-boutique-release-gke-cluster)._
+_Note: before moving forward, the Happy Shoppy apps should already be deployed [on the shoppy-happy-release GKE cluster](/docs/releasing#10-deploy-releasekubernetes-manifestsyaml-to-our-shoppy-happy-release-gke-cluster)._
 
 ## Public static IP address
 
 Create the static public IP address:
 ```
-STATIC_IP_NAME=online-boutique-ip # name hard-coded in: frontend-ingress.yaml
+STATIC_IP_NAME=shoppy-happy-ip # name hard-coded in: frontend-ingress.yaml
 gcloud compute addresses create $STATIC_IP_NAME --global
 ```
 
@@ -23,7 +23,7 @@ gcloud compute addresses describe $STATIC_IP_NAME \
 
 Set up Cloud Armor:
 ```
-SECURITY_POLICY_NAME=online-boutique-security-policy # Name hard-coded in: backendconfig.yaml
+SECURITY_POLICY_NAME=shoppy-happy-security-policy # Name hard-coded in: backendconfig.yaml
 gcloud compute security-policies create $SECURITY_POLICY_NAME \
     --description "Block various attacks"
 gcloud compute security-policies rules create 1000 \
@@ -46,7 +46,7 @@ gcloud compute security-policies update $SECURITY_POLICY_NAME \
 
 Set up an SSL policy in order to later set up a redirect from HTTP to HTTPs:
 ```
-SSL_POLICY_NAME=online-boutique-ssl-policy # Name hard-coded in: frontendconfig.yaml
+SSL_POLICY_NAME=shoppy-happy-ssl-policy # Name hard-coded in: frontendconfig.yaml
 gcloud compute ssl-policies create $SSL_POLICY_NAME \
     --profile COMPATIBLE  \
     --min-tls-version 1.0

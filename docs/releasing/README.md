@@ -47,14 +47,14 @@ This document walks through the process of creating a new release of Happy Shopp
 
 9. Once your pull-request is approved, merge it.
 
-10. Connect to our [online-boutique-release GKE cluster](https://pantheon.corp.google.com/kubernetes/clusters/details/us-central1-c/online-boutique-release/details?project=online-boutique-ci).
+10. Connect to our [shoppy-happy-release GKE cluster](https://pantheon.corp.google.com/kubernetes/clusters/details/us-central1-c/shoppy-happy-release/details?project=shoppy-happy-ci).
 
    ```
-   gcloud container clusters get-credentials online-boutique-release \
-     --zone us-central1-c --project online-boutique-ci
+   gcloud container clusters get-credentials shoppy-happy-release \
+     --zone us-central1-c --project shoppy-happy-ci
    ```
 
-11. Deploy `release/kubernetes-manifests.yaml` to our [online-boutique-release GKE cluster](https://pantheon.corp.google.com/kubernetes/clusters/details/us-central1-c/online-boutique-release/details?project=online-boutique-ci).
+11. Deploy `release/kubernetes-manifests.yaml` to our [shoppy-happy-release GKE cluster](https://pantheon.corp.google.com/kubernetes/clusters/details/us-central1-c/shoppy-happy-release/details?project=shoppy-happy-ci).
 
    ```
    kubectl apply -f ./release/kubernetes-manifests.yaml

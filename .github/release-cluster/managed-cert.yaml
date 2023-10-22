@@ -1,7 +1,7 @@
 apiVersion: networking.gke.io/v1
 kind: ManagedCertificate
 metadata:
-  name: online-boutique-certificate
+  name: shoppy-happy-certificate
 spec:
   domains:
     - onlineboutique.dev

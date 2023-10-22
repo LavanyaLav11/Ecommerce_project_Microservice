@@ -22,7 +22,7 @@ If you’re using this demo, please **★Star** this repository to show your int
 
 | Home Page                                                                                                         | Checkout Screen                                                                                                    |
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| [![Screenshot of store homepage](/docs/img/online-boutique-frontend-1.png)](/docs/img/online-boutique-frontend-1.png) | [![Screenshot of checkout screen](/docs/img/online-boutique-frontend-2.png)](/docs/img/online-boutique-frontend-2.png) |
+| [![Screenshot of store homepage](/docs/img/shoppy-happy-frontend-1.png)](/docs/img/shoppy-happy-frontend-1.png) | [![Screenshot of checkout screen](/docs/img/shoppy-happy-frontend-2.png)](/docs/img/shoppy-happy-frontend-2.png) |
 
 ## Interactive quickstart (GKE)
 
@@ -55,7 +55,7 @@ If you’re using this demo, please **★Star** this repository to show your int
 4. Create a GKE cluster and get the credentials for it.
 
    ```sh
-   gcloud container clusters create-auto online-boutique \
+   gcloud container clusters create-auto shoppy-happy \
      --project=${PROJECT_ID} --region=${REGION}
    ```
 
@@ -102,7 +102,7 @@ If you’re using this demo, please **★Star** this repository to show your int
 8. Once you are done with it, delete the GKE cluster.
 
    ```sh
-   gcloud container clusters delete online-boutique \
+   gcloud container clusters delete shoppy-happy \
      --project=${PROJECT_ID} --region=${REGION}
    ```
 

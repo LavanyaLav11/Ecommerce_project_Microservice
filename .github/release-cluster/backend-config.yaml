@@ -4,4 +4,4 @@ metadata:
   name: frontend-backend-config
 spec:
   securityPolicy:
-    name: online-boutique-security-policy
+    name: shoppy-happy-security-policy
