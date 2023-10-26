@@ -37,7 +37,7 @@ If you’re using this demo, please **★Star** this repository to show your int
 2. Clone the repository.
 
    ```sh
-   git clone https://github.com/LavanyaLav11/Ecommerce_project_Microservice
+   git clone https://github.com/LavanyaLav11/Ecommerce_project_Microservice.git
    cd microservices-demo/
    ```
 
