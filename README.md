@@ -1,5 +1,5 @@
 <p align="center">
-<img src="/src/frontend/static/icons/Hipster_HeroLogoMaroon.svg" width="300" alt="Happy Shoppy" />
+<img src="/src/frontend/static/icons/title_img.jpeg" width="300" alt="Happy Shoppy" />
 </p>
 
 ![Continuous Integration](https://github.com/GoogleCloudPlatform/microservices-demo/workflows/Continuous%20Integration%20-%20Main/Release/badge.svg)
@@ -37,7 +37,7 @@ If you’re using this demo, please **★Star** this repository to show your int
 2. Clone the repository.
 
    ```sh
-   git clone https://github.com/GoogleCloudPlatform/microservices-demo
+   git clone https://github.com/LavanyaLav11/Ecommerce_project_Microservice
    cd microservices-demo/
    ```
 
