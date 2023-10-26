@@ -1,5 +1,5 @@
 <p align="center">
-<img src="/src/frontend/static/icons/LogoImage.png" width="300" alt="Happy Shoppy" />
+<img src="/src/frontend/static/icons/Hipster_HeroLogoMaroon.svg" width="300" alt="Happy Shoppy" />
 </p>
 
 ![Continuous Integration](https://github.com/GoogleCloudPlatform/microservices-demo/workflows/Continuous%20Integration%20-%20Main/Release/badge.svg)
@@ -22,7 +22,7 @@ If you’re using this demo, please **★Star** this repository to show your int
 
 | Home Page                                                                                                         | Checkout Screen                                                                                                    |
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| [![Screenshot of store homepage](/docs/img/shoppy-happy-frontend-1.png)](/docs/img/shoppy-happy-frontend-1.png) | [![Screenshot of checkout screen](/docs/img/shoppy-happy-frontend-2.png)](/docs/img/shoppy-happy-frontend-2.png) |
+| [![Screenshot of store homepage](/docs/img/online-boutique-frontend-1.png)](/docs/img/online-boutique-frontend-1.png) | [![Screenshot of checkout screen](/docs/img/online-boutique-frontend-2.png)](/docs/img/online-boutique-frontend-2.png) |
 
 ## Interactive quickstart (GKE)
 
@@ -55,7 +55,7 @@ If you’re using this demo, please **★Star** this repository to show your int
 4. Create a GKE cluster and get the credentials for it.
 
    ```sh
-   gcloud container clusters create-auto shoppy-happy \
+   gcloud container clusters create-auto online-boutique \
      --project=${PROJECT_ID} --region=${REGION}
    ```
 
@@ -102,7 +102,7 @@ If you’re using this demo, please **★Star** this repository to show your int
 8. Once you are done with it, delete the GKE cluster.
 
    ```sh
-   gcloud container clusters delete shoppy-happy \
+   gcloud container clusters delete online-boutique \
      --project=${PROJECT_ID} --region=${REGION}
    ```
 
@@ -199,4 +199,3 @@ See the [Development guide](/docs/development-guide.md) to learn how to run and 
 ---
 
 This is not an official Google project.
-"# Ecommerce_project_Microservice" 
