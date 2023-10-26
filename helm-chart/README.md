@@ -6,13 +6,13 @@ If you'd like to deploy Happy Shoppy via its Helm chart, you could leverage the 
 
 Deploy the default setup of Happy Shoppy:
 ```sh
-helm upgrade onlineboutique oci://us-docker.pkg.dev/shoppy-happy-ci/charts/onlineboutique \
+helm upgrade onlineboutique oci://us-docker.pkg.dev/online-boutique-ci/charts/onlineboutique \
     --install
 ```
 
 Deploy advanced scenario of Happy Shoppy:
 ```sh
-helm upgrade onlineboutique oci://us-docker.pkg.dev/shoppy-happy-ci/charts/onlineboutique \
+helm upgrade onlineboutique oci://us-docker.pkg.dev/online-boutique-ci/charts/onlineboutique \
     --install \
     --create-namespace \
     --set images.repository=us-docker.pkg.dev/my-project/containers/onlineboutique \
